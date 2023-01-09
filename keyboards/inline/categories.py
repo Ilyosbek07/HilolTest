@@ -16,7 +16,7 @@ async def categories_keyboard():
     for category in categories:
         # Tugma matnini yasab olamiz
         button_text = f"{category['nomi']}"
-        call_back = f"category_{category['call_back']}"
+        call_back = f"category_{category['id']}"
         markup.insert(
             InlineKeyboardButton(text=button_text, callback_data=call_back)
         )

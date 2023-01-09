@@ -20,13 +20,13 @@ class Database:
         )
 
     async def execute(
-        self,
-        command,
-        *args,
-        fetch: bool = False,
-        fetchval: bool = False,
-        fetchrow: bool = False,
-        execute: bool = False,
+            self,
+            command,
+            *args,
+            fetch: bool = False,
+            fetchval: bool = False,
+            fetchrow: bool = False,
+            execute: bool = False,
     ):
         async with self.pool.acquire() as connection:
             connection: Connection
@@ -128,9 +128,13 @@ class Database:
         sql = f"SELECT * FROM products_product WHERE category_code='{category_code}' AND subcategory_code='{subcategory_code}'"
         return await self.execute(sql, fetch=True)
 
-    async def get_product(self, product_id):
-        sql = f"SELECT * FROM products_product WHERE id={product_id}"
-        return await self.execute(sql, fetchrow=True)
+    async def get_product(self, cat_id, que_id):
+        sql = f"SELECT * FROM appp_quetions WHERE category_id={cat_id} AND id={que_id}"
+        return await self.execute(sql, fetch=True)
+
+    async def count_quetions(self, id):
+        sql = f"SELECT COUNT(*) FROM appp_quetions WHERE category_id={id}"
+        return await self.execute(sql, fetchval=True)
 
     async def drop_products(self):
         await self.execute("DROP TABLE products_product", execute=True)

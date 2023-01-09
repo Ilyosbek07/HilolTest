@@ -48,7 +48,7 @@ class Quetions(models.Model):
         choices=YEAR_IN_SCHOOL_CHOICES,
         default=FRESHMAN,
     )
-    photo = models.CharField(verbose_name="Rasm file_id", max_length=300, null=True)
+    photo = models.CharField(verbose_name="Photo url", max_length=300, null=True)
 
     def __str__(self):
         return self.savol
