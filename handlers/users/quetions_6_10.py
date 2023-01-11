@@ -27,27 +27,36 @@ async def show_item6(callback: CallbackQuery, state: FSMContext):
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
 
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_6': f"{item['javobi']}",
+                    'user_ans_5': f"{callback.data}",
+                    'ans_6': f"{ans_text}",
                     'ans_6_text': f"{item['savol']}",
                     'ans_5_status': 'bad'
                 }
@@ -72,27 +81,36 @@ async def show_item6(callback: CallbackQuery, state: FSMContext):
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
 
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_6': f"{item['javobi']}",
+                    'user_ans_5': f"{callback.data}",
+                    'ans_6': f"{ans_text}",
                     'ans_6_text': f"{item['savol']}",
                     'ans_5_status': 'good'
                 }
@@ -120,28 +138,35 @@ async def show_item7(callback: CallbackQuery, state: FSMContext):
 
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
-
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_7': f"{item['javobi']}",
+                    'ans_7': f"{ans_text}",
                     'ans_7_text': f"{item['savol']}",
                     'ans_6_status': 'bad'
                 }
@@ -166,27 +191,36 @@ async def show_item7(callback: CallbackQuery, state: FSMContext):
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
 
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_7': f"{item['javobi']}",
+                    'user_ans_6': f"{callback.data}",
+                    'ans_7': f"{ans_text}",
                     'ans_7_text': f"{item['savol']}",
                     'ans_6_status': 'good'
                 }
@@ -214,28 +248,36 @@ async def show_item8(callback: CallbackQuery, state: FSMContext):
 
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
-
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_8': f"{item['javobi']}",
+                    'user_ans_7': f"{callback.data}",
+                    'ans_8': f"{ans_text}",
                     'ans_8_text': f"{item['savol']}",
                     'ans_7_status': 'bad'
                 }
@@ -259,28 +301,36 @@ async def show_item8(callback: CallbackQuery, state: FSMContext):
 
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
-
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_8': f"{item['javobi']}",
+                    'user_ans_7': f"{callback.data}",
+                    'ans_8': f"{ans_text}",
                     'ans_8_text': f"{item['savol']}",
                     'ans_7_status': 'good'
                 }
@@ -309,27 +359,36 @@ async def show_item9(callback: CallbackQuery, state: FSMContext):
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
 
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_9': f"{item['javobi']}",
+                    'user_ans_8': f"{callback.data}",
+                    'ans_9': f"{ans_text}",
                     'ans_9_text': f"{item['savol']}",
                     'ans_8_status': 'bad'
                 }
@@ -353,28 +412,36 @@ async def show_item9(callback: CallbackQuery, state: FSMContext):
 
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
-
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_9': f"{item['javobi']}",
+                    'user_ans_8': f"{callback.data}",
+                    'ans_9': f"{ans_text}",
                     'ans_9_text': f"{item['savol']}",
                     'ans_8_status': 'good'
                 }
@@ -403,33 +470,42 @@ async def show_item10(callback: CallbackQuery, state: FSMContext):
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
 
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_10': f"{item['javobi']}",
+                    'user_ans_9': f"{callback.data}",
+                    'ans_10': f"{ans_text}",
                     'ans_10_text': f"{item['savol']}",
                     'ans_9_status': 'bad'
                 }
             )
             await callback.message.edit_text(text=text, reply_markup=markup)
-            await MainState.five.set()
+            await MainState.finish.set()
     else:
         data = await state.get_data()
         id = data.get('category')
@@ -448,27 +524,36 @@ async def show_item10(callback: CallbackQuery, state: FSMContext):
             if item['manbaa']:
                 text += f"\n\n{item['manbaa']}"
 
+            javob_1 = f"{item['javob_1']}"
+            javob_2 = f"{item['javob_2']}"
             markup.row(
-                InlineKeyboardButton(text=f"{item['javob_1']}", callback_data='1')
+                InlineKeyboardButton(text=javob_1, callback_data=javob_1)
             )
             markup.insert(
-                InlineKeyboardButton(text=f"{item['javob_2']}", callback_data='2')
+                InlineKeyboardButton(text=javob_2, callback_data=javob_2)
             )
             if item['javob_3']:
+                javob_3 = f"{item['javob_3']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_3']}", callback_data='3')
+                    InlineKeyboardButton(text=javob_3, callback_data=javob_3)
                 )
             if item['javob_4']:
+                javob_4 = f"{item['javob_4']}"
+
                 markup.insert(
-                    InlineKeyboardButton(text=f"{item['javob_4']}", callback_data='4')
+                    InlineKeyboardButton(text=javob_4, callback_data=javob_4)
                 )
 
             markup.add(
                 InlineKeyboardButton(text='Bilmayman', callback_data='field')
             )
+            ans_id = f'javob_{item["javobi"]}'
+            ans_text = f"{item[ans_id]}"
             await state.update_data(
                 {
-                    'ans_10': f"{item['javobi']}",
+                    'user_ans_9': f"{callback.data}",
+                    'ans_10': f"{ans_text}",
                     'ans_10_text': f"{item['savol']}",
                     'ans_9_status': 'good'
                 }
@@ -477,23 +562,3 @@ async def show_item10(callback: CallbackQuery, state: FSMContext):
             await MainState.finish.set()
 
 
-@dp.callback_query_handler(lambda callback_query: True, state=MainState.finish)
-async def finish(callback: CallbackQuery, state: FSMContext):
-    if callback.data == 'field':
-        await state.update_data(
-            {
-                'ans_10_status': 'bad'
-            }
-        )
-        data = await state.get_data()
-        await callback.message.answer(text=f"{data}")
-        await state.finish()
-    else:
-        await state.update_data(
-            {
-                'ans_10_status': 'good'
-            }
-        )
-        data = await state.get_data()
-        await callback.message.answer(text=f"{data}")
-        await state.finish()
